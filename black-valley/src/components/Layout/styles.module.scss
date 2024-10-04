@@ -1,6 +1,106 @@
 .containerHeader {
     width: 100%;
-    height: 80px;
+    background-image: url('../../assets/imgs/header2.png');
+    background-position: center;
+
+    height: 90dvh;
     background-color: #fff;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.headerSection {
+    background-color: #0b0b0b3a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    padding: 3% 5%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0.401) 65%, rgba(0, 0, 0, 0.362) 100%);
+
+}
+
+
+.title {
+    font-size: 22px;
+    color: #fff;
+}
+
+.nav p {
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav p:hover {
+    scale: 1.02;
+    text-decoration: underline;
+}
+
+.containerhref {
+    display: flex;
+    gap: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerAll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 50px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #ffffff32;
+    border-radius: 10px;
+}
+
+.containerAll h2 {
+    color: red;
+    font-size: 55px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    line-height: 56px;
+    flex-wrap: nowrap;
+}
+
+.containerText {
+    display: flex;
+    gap: 10px;
+}
+
+.containerAll p {
+    font-weight: 500;
+    line-height: 56px;
+    font-size: 55px;
+    color: #fff;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    width: 50%;
+}
+
+.containerBrands {
+    display: flex;
+    height: 110px;
+    width: 100%;
+    // background-color: #222222;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+.brand{
+    width: 80%;
+    background-color: #222222;
+    height: 110px;
+    border-radius: 10px;
 }
