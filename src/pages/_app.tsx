@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import HookDimensionsProvider from '@/utils/hook'
 import type { AppProps } from 'next/app'
 import { useLayoutEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState<boolean>(false)
@@ -15,7 +16,10 @@ export default function App({ Component, pageProps }: AppProps) {
     <HookDimensionsProvider>
       {
         loading && (
-          <Component {...pageProps} />
+          <>
+            <Component {...pageProps} />
+            <Analytics />
+          </>
         )
       }
     </HookDimensionsProvider>
