@@ -1,0 +1,42 @@
+.containerPrimary {
+    width: 50%;
+
+}
+
+.containerImage {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.containerImage img {
+    border-radius: 10px;
+}
+
+.containerImageSecond {
+    width: 50%;
+}
+
+@media(max-width: 765px) {
+    .containerPrimary {
+        width: 100%;
+
+    }
+
+    .containerImage {
+        width: 100%;
+
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .containerImageSecond {
+        width: 100%;
+        margin-bottom: 120px;
+    }
+}

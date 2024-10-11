@@ -1,0 +1,113 @@
+.logo {
+
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+}
+
+.titleSecond {
+    color: red;
+    font-size: 90px;
+    text-shadow: 2px 1px 2px #fff;
+}
+
+.containerLogo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerLogo div {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateX(360deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+
+
+.containerLogo div span:hover {
+    cursor: pointer;
+    scale: 1.02;
+    transition: 1s;
+    animation: rotation 3s linear infinite;
+}
+
+
+.containerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    padding-inline: 30px;
+    z-index: 999999;
+    position: fixed;
+    min-height: 50px;
+}
+
+@media(min-width: 765px) {
+    .containerCards {
+        position: absolute;
+        right: 30px;
+        bottom: 50px;
+        display: flex;
+        gap: 20px;
+        z-index: 999;
+    }
+
+}
+
+@media(max-width: 765px) {
+    .containerMainHeader {
+
+        width: 100% !important;
+        padding: 0 !important;
+        margin-top: 80px;
+        text-align: center;
+
+
+    }
+
+    .containerMainHeader h1 {
+        font-size: 40px !important;
+    }
+
+    .titleSecond {
+        font-size: 47px;
+    }
+
+    .containerWhats {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+    .containerCards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        margin-top: 20px;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .containerCards::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .containerCards::-webkit-scrollbar {
+        width: 1px !important;
+    }
+}

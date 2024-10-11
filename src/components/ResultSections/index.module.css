@@ -1,0 +1,57 @@
+.title {
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.containerPhotosResults {
+    display: flex;
+    gap: 10px;
+
+    width: 90%;
+    justify-content: center;
+}
+
+.containerCarrousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.containerCarrousel div {
+    display: flex;
+    gap: 10px;
+}
+
+.containerCarrousel div p {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media(max-width: 765px) {
+    .containerPhotosResults {
+        overflow-x: scroll;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .containerPhotosResults::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .containerPhotosResults::-webkit-scrollbar {
+        width: 1px !important;
+    }
+}

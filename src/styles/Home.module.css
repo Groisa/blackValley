@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 30px;
+  scroll-behavior: smooth !important;
+}
+
